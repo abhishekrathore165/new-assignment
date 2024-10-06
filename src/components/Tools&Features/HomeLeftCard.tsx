@@ -7,9 +7,6 @@ interface DataLeftProps {
   content: string;
 }
 
-
-
-
 function HomeLeftCard({ data }: { data: DataLeftProps }) {
   return (
     <div className='flex xl:h-[70vh] justify-center  items-center overflow-hidden  snap-center'>
