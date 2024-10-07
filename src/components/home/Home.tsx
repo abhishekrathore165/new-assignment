@@ -11,36 +11,40 @@ import { Stickynav } from '../Stickynav/Stickynav'
 import EmblaCarouselHome from '../Carousel/verticalHome/EmblaCarouselHome'
 import { EmblaOptionsType } from 'embla-carousel'
 import '@/components/Carousel/verticalHome/css/emblahome.css'
+import FloatingFooter from '../footer/FloatingFooter'
 const OPTIONS: EmblaOptionsType = { axis: 'y' }
 const SLIDE_COUNT = 3
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 function Home() {
   return (
     <div>
-      <Header/>
-      <Main/>
-      <Stickynav/>
+      <Header />
+      <Main />
+      <Stickynav />
       <div id="table-of-contents" className='py-10 lg:py-20 '>
-      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+        <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
       <div id="screencasts" className=' py-10 lg:py-20'>
-      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+        <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
       <div id="resources" className='py-10 lg:py-20'>
-      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+        <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
       <div id="pricing" className='py-10 lg:py-20'>
-      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+        <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
       {/* <ScrollAnimationComponent/> */}
-    <div id="feature">
+      <div id="feature">
 
-      <Features  />
-    </div>
+        <Features />
+      </div>
 
-      <Advisory/>
-      <Research/>
-      <Footer/>
+      <Advisory />
+      <Research />
+      <Footer />
+      <div className='relative lg:pb-[8rem] md:pb-[5rem] pb-[6rem] '>
+        <FloatingFooter />
+      </div>
     </div>
   )
 }
