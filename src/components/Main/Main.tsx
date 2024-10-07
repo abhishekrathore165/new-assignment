@@ -31,7 +31,7 @@ function Main() {
                                 <p className='text-center text-[#ECF5FF] md:text-xl lg:w-[814px]'>Indepth research insights transformed into powerful organization development tools & simulations, to empower business practioners to implement strategic interventions that drive growth & innovation</p>
                             </div>
                             <div className='flex gap-[20px] justify-center'>
-                                <Button variant={'primary'}>Join Community</Button>
+                                <Button variant={'primary'} >Join Community</Button>
                                 <Button variant={'outline'}>Let’s Collaborate</Button>
                             </div>
                         </div>

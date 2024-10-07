@@ -14,7 +14,7 @@ function SuccessStories() {
         { src: '/image3.jpg', alt: 'Image 3', title: 'Slide 3', description: 'Description for slide 3' },
     ];
     return (
-        <div className='flex justify-center items-center min-h-screen'>
+        <div className='flex justify-center items-center md:min-h-screen min-h-auto '>
             <div className='w-[95%] lg:w-[80%]  flex items-center justify-center'>
 
                 <div className='basis-1/2 h-[276px]'>
